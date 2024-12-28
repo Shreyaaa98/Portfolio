@@ -307,6 +307,7 @@ max-width: 630px;
 
   .container{
     margin-top: 5rem;
+   
   }
 
  
@@ -319,7 +320,7 @@ max-width: 630px;
     background: rgba(0, 0, 22, 0.4);
     width: 700px;
     height: 500px;
-    margin-left: 450px;
+    margin-left: 350px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 padding: 30px;
   
