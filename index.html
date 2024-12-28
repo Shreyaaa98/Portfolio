@@ -257,12 +257,12 @@
   
 </div>
 <div class="contact-form">
-  <form  method="POST">
+  <form action="mailto:guptashreya83032gmail.com" method="post" enctype="text/plain">
     <input type="text" Placeholder="Enter your name" name="name" required>
-    <input type="email" Placeholder="Enter your email" name="email" required>
+    <input type="email" Placeholder="Enter your email" name="email"  id='email' required>
      
     <textarea name="message" placeholder="Enter your message" cols="40" rows="10" required></textarea>
-  <button type="submit" class="send">Submit</button>
+  <button type="submit">Submit</button>
   </form>
 </div>
 
@@ -276,7 +276,8 @@
 
 <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
     
-    
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
     <script src="script.js"></script>
   </body>

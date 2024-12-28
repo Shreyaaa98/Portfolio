@@ -40,29 +40,47 @@ function closemenu(){
 }
 
 
-document.querySelector('.contact-form form').addEventListener('submit', async function (e) {
-  console.log("clicked");
-  e.preventDefault();
+// document.querySelector('.contact-form form').addEventListener('submit', async function (e) {
+//   console.log("clicked");
+//   e.preventDefault();
 
-  const formData = new FormData(e.target);
-  console.log(formData);
+//   const formData = new FormData(e.target);
+//   console.log(formData);
 
-  const response = await fetch('http://localhost:3000/send-email', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          message: formData.get("message"),
-      }),
-  });
+//   const response = await fetch('http://localhost:3000/send-email', {
+//       method: 'POST',
+//       headers: {
+//           'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({
+//           name: formData.get("name"),
+//           email: formData.get("email"),
+//           message: formData.get("message"),
+//       }),
+//   });
 
-  if (response.ok) {
-      alert('Message sent successfully!');
-      e.target.reset();
-  } else {
-      alert('Failed to send message.');
-  }
-});
+//   if (response.ok) {
+//       alert('Message sent successfully!');
+//       e.target.reset();
+//   } else {
+//       alert('Failed to send message.');
+//   }
+// });
+
+
+// document.querySelector('.contact-form form').addEventListener('submit', async function (e) {
+//   console.log("clicked");
+//   e.preventDefault();
+
+ 
+//   const response = await fetch('http://localhost:3000/auth');
+  
+//   if (response.ok) {
+//       alert('Message sent successfully!');
+//       e.target.reset();
+//   } else {
+//       alert('Failed to send message.');
+//   }
+// });
+
+
